@@ -27,7 +27,7 @@ You can meaure other application's startup time using `AppStartupTime.exe` by sp
 
 ## Example output of the program:
 ```
-Startup Time for C:\Program Files\Microsoft Office\root\Office16\winword.exe is: 156(ms)
+Startup Time for C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE is: 265(ms)
 ```
 
 Test environment:
