@@ -48,6 +48,9 @@ void _tmain(int argc, TCHAR *argv[])
     ULONGLONG  stopWatch = stop - start;
     _tprintf(TEXT("Startup Time for %s is: %d(ms)"), argv[1], stopWatch);
 
+    // Comment out following code to prefer to close the application manually
+    // (void)TerminateProcess(pi.hProcess, 0);
+
     // Close process and thread handles. 
     CloseHandle(pi.hProcess);
     CloseHandle(pi.hThread);
