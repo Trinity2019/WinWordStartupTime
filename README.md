@@ -18,7 +18,7 @@ Open `AppStartupTime.sln` solution and build with `Microsoft Visual Studio`.
 ```
 AppStartupTime.exe "C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"
 ```
-Note that in above command line, `"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"` is the path where WinWord executable is located in my environment. It may be different depending on installation locations. For the program to work correctly, you need to specify the path of `WINWORD.EXE` in your environment.
+Note that in above command line, `"C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE"` is the path where WinWord executable is located in my environment. It may be different depending on installation locations. For the program to measure WinWord startup time correctly, you need to specify the path of `WINWORD.EXE` in your environment.
  * Measure other application's startup time:
 ```
 AppStartupTime.exe [path/to/the/application/exe]
