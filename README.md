@@ -1,4 +1,4 @@
-# WinWordStartupTime
+# ApplicationStartupTime
 A simple tool to measure Windows application (such as WinWord) startup time.
 
 This sample code is associated with my blog post [Practical CPU time performance tuning for security software: Part 2](https://www.elastic.co/blog/practical-cpu-time-performance-tuning-for-security-software-part-2). 
