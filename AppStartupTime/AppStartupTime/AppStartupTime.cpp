@@ -42,7 +42,14 @@ void _tmain(int argc, TCHAR *argv[])
 
     // Wait for the specified process has finished its initialization and
     // is waiting for user input with no input pending
-    (void)WaitForInputIdle(pi.hProcess, INFINITE);
+    if (0 != WaitForInputIdle(pi.hProcess, INFINITE))
+    {
+        _tprintf(TEXT("Failed to wait for initialization of [%s].\n"), argv[1]);
+
+        CloseHandle(pi.hProcess);
+        CloseHandle(pi.hThread);
+        return;
+    }
 
     ULONGLONG  stop = GetTickCount64();
     ULONGLONG  stopWatch = stop - start;
